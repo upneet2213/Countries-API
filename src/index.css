@@ -1,13 +1,105 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  font-family: "Nunito Sans", sans-serif;
+  min-height: 100vh;
+  height: auto;
+  color: white;
+  overflow: hidden;
+}
+.btn {
+  background: none;
+  border: none;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(209, 23%, 22%);
+  padding: 30px 60px;
+  height: 10%;
+}
+.change-mode {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.section {
+  background: hsl(207, 26%, 17%);
+  height: 90%;
+}
+.section-header {
+  display: flex;
+  padding: 30px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  background: hsl(209, 23%, 22%);
+  padding: 10px;
+}
+.country-type {
+  display: flex;
+}
+.country-type input {
+  background: hsl(209, 23%, 22%);
+  border: none;
+  padding: 20px 10px;
+}
+.region {
+  background: hsl(209, 23%, 22%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 15px;
+  text-align: center;
+}
+.country {
+  background: hsl(209, 23%, 22%);
+}
+.section-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+  padding: 10px 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.country img {
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  padding: 30px 15px;
+}
+.info-footer {
+  line-height: 1.5rem;
+  padding: 10px 15px;
+}
+.element {
+  display: flex;
+  gap: 5px;
+}
+.modal-container {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.modal {
+  height: 50%;
+  width: 50%;
+  position: relative;
+  margin: 25vh auto;
+  z-index: 2;
+  background: white;
 }
